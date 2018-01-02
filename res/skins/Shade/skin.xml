@@ -383,13 +383,13 @@
 							<Style>QGroupBox { border: 0px solid red; } QWidget { margin: 10px; padding: 0; }</Style>
 						</WidgetGroup>
 				        <Template src="skin:sampler.xml">
-				          <SetVariable name="samplernum">5</SetVariable>
+				          <SetVariable name="samplernum">1</SetVariable>
 				        </Template>
 				        <Template src="skin:sampler.xml">
-				          <SetVariable name="samplernum">6</SetVariable>
+				          <SetVariable name="samplernum">2</SetVariable>
 				        </Template>
 				        <Template src="skin:effectunit.xml">
-				          <SetVariable name="effectunitnum">3</SetVariable>
+				          <SetVariable name="effectunitnum">1</SetVariable>
 				        </Template>
 				      </Children>
 				      <Connection>
