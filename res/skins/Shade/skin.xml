@@ -58,7 +58,7 @@
 		<language>en</language>
 		<license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
 		<attributes>
-			<attribute config_key="[Master],num_decks">2</attribute>
+			<attribute config_key="[Master],num_decks">4</attribute>
 			<attribute config_key="[Master],num_samplers">4</attribute>
 			<attribute config_key="[Master],num_preview_decks">1</attribute>
 			<!--Optionally, make elements visible on skin load-->
@@ -379,17 +379,14 @@
 				      <Children>
 						<WidgetGroup>
 							<ObjectName>sampler_effect</ObjectName>
-							<Size>3f,100f</Size>
+							<Size>3f,65</Size>
 							<Style>QGroupBox { border: 0px solid red; } QWidget { margin: 10px; padding: 0; }</Style>
 						</WidgetGroup>
-				        <Template src="skin:sampler.xml">
+				        <Template src="skin:prepare_deck.xml">
 				          <SetVariable name="samplernum">1</SetVariable>
 				        </Template>
-				        <Template src="skin:sampler.xml">
+				        <Template src="skin:prepare_deck.xml">
 				          <SetVariable name="samplernum">2</SetVariable>
-				        </Template>
-				        <Template src="skin:effectunit.xml">
-				          <SetVariable name="effectunitnum">1</SetVariable>
 				        </Template>
 				      </Children>
 				      <Connection>
