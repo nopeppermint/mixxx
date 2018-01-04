@@ -54,170 +54,79 @@
 							</TrackProperty>
 							-->
 							<WidgetGroup>
-							 	<Size>142f,24f</Size>
+							 	<Size>95f,24f</Size>
 								<Style>QGroupBox {border: 0px solid red; } QWidget { margin: 0; padding: 0; }</Style>
 								<Children>
 
-                               <PushButton>
-			                        <TooltipId></TooltipId>
-			                        <Style></Style>
-			                        <NumberStates>2</NumberStates>
-			                        <State>
-				                        <Number>0</Number>
-				                        <Pressed>unmute.png</Pressed>
-				                        <Unpressed>unmute.png</Unpressed>
-			                        </State>
-			                        <State>
-				                        <Number>1</Number>
-				                        <Pressed>mute.png</Pressed>
-				                        <Unpressed>mute.png</Unpressed>
-			                        </State>
-			                        <Pos>0,7</Pos>
-			                        <Connection>
-				                        <ConfigKey>[Channel<Variable name="channum"/>],mute</ConfigKey>
-				                        <ButtonState>LeftButton</ButtonState>
-			                        </Connection>
-		                        </PushButton>
+						            <PushButton>
+							            <TooltipId>cue_default_cue_gotoandstop</TooltipId>
+							            <Style></Style>
+							            <NumberStates>2</NumberStates>
+							            <State>
+								            <Number>0</Number>
+								            <Pressed>btn_cue1_small_down.png</Pressed>
+								            <Unpressed>btn_cue1_small.png</Unpressed>
+							            </State>
+							            <State>
+								            <Number>1</Number>
+								            <Pressed>btn_cue1_small_overdown.png</Pressed>
+								            <Unpressed>btn_cue1_small_over.png</Unpressed>
+							            </State>
+							            <Pos>0,9</Pos>
+							            <Connection>
+								            <ConfigKey>[Channel<Variable name="channum"/>],cue_default</ConfigKey>
+								            <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+								            <ButtonState>LeftButton</ButtonState>
+							            </Connection>
+							            <Connection>
+								            <ConfigKey>[Channel<Variable name="channum"/>],cue_gotoandstop</ConfigKey>
+								            <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+								            <ButtonState>RightButton</ButtonState>
+							            </Connection>
+							            <Connection>
+								            <ConfigKey>[Channel<Variable name="channum"/>],cue_indicator</ConfigKey>
+							            </Connection>
+						            </PushButton>
 
-								<PushButton>
-									<TooltipId>hotcue</TooltipId>
-									<Style></Style>
-									<NumberStates>2</NumberStates>
-									<LeftClickIsPushButton>true</LeftClickIsPushButton>
-									<RightClickIsPushButton>true</RightClickIsPushButton>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_hotcue1_1_down.png</Pressed>
-										<Unpressed>btn_hotcue1_1.png</Unpressed>
-									</State>
-									<State>
-										<Number>1</Number>
-										<Pressed>btn_hotcue1_1_overdown.png</Pressed>
-										<Unpressed>btn_hotcue1_1_over.png</Unpressed>
-									</State>
-									<Pos>20,5</Pos>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_1_activate</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>LeftButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_1_clear</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>RightButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_1_enabled</ConfigKey>
-										<ConnectValueFromWidget>false</ConnectValueFromWidget>
-									</Connection>
-								</PushButton>
+									<PushButton>
+										<TooltipId>quantize</TooltipId>
+										<Style></Style>
+										<NumberStates>2</NumberStates>
+										<State>
+											<Number>0</Number>
+											<Pressed>btn_quantize1.png</Pressed>
+											<Unpressed>btn_quantize1.png</Unpressed>
+										</State>
+										<State>
+											<Number>1</Number>
+											<Pressed>btn_quantize1_over.png</Pressed>
+											<Unpressed>btn_quantize1_over.png</Unpressed>
+										</State>
+										<Pos>22,5</Pos>
+										<Connection>
+											<ConfigKey>[Channel<Variable name="channum"/>],quantize</ConfigKey>
+											<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+											<ButtonState>LeftButton</ButtonState>
+										</Connection>
+									</PushButton>
 
-								<PushButton>
-									<TooltipId>hotcue</TooltipId>
-									<Style></Style>
-									<NumberStates>2</NumberStates>
-									<LeftClickIsPushButton>true</LeftClickIsPushButton>
-									<RightClickIsPushButton>true</RightClickIsPushButton>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_hotcue1_2_down.png</Pressed>
-										<Unpressed>btn_hotcue1_2.png</Unpressed>
-									</State>
-									<State>
-										<Number>1</Number>
-										<Pressed>btn_hotcue1_2_overdown.png</Pressed>
-										<Unpressed>btn_hotcue1_2_over.png</Unpressed>
-									</State>
-									<Pos>40,5</Pos>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_2_activate</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>LeftButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_2_clear</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>RightButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_2_enabled</ConfigKey>
-										<ConnectValueFromWidget>false</ConnectValueFromWidget>
-									</Connection>
-								</PushButton>
-
-								<PushButton>
-									<TooltipId>hotcue</TooltipId>
-									<Style></Style>
-									<NumberStates>2</NumberStates>
-									<LeftClickIsPushButton>true</LeftClickIsPushButton>
-									<RightClickIsPushButton>true</RightClickIsPushButton>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_hotcue1_3_down.png</Pressed>
-										<Unpressed>btn_hotcue1_3.png</Unpressed>
-									</State>
-									<State>
-										<Number>1</Number>
-										<Pressed>btn_hotcue1_3_overdown.png</Pressed>
-										<Unpressed>btn_hotcue1_3_over.png</Unpressed>
-									</State>
-									<Pos>60,5</Pos>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_3_activate</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>LeftButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_3_clear</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>RightButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_3_enabled</ConfigKey>
-										<ConnectValueFromWidget>false</ConnectValueFromWidget>
-									</Connection>
-								</PushButton>
-
-								<PushButton>
-									<TooltipId>hotcue</TooltipId>
-									<Style></Style>
-									<NumberStates>2</NumberStates>
-									<LeftClickIsPushButton>true</LeftClickIsPushButton>
-									<RightClickIsPushButton>true</RightClickIsPushButton>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_hotcue1_4_down.png</Pressed>
-										<Unpressed>btn_hotcue1_4.png</Unpressed>
-									</State>
-									<State>
-										<Number>1</Number>
-										<Pressed>btn_hotcue1_4_overdown.png</Pressed>
-										<Unpressed>btn_hotcue1_4_over.png</Unpressed>
-									</State>
-									<Pos>80,5</Pos>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_4_activate</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>LeftButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_4_clear</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>RightButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],hotcue_4_enabled</ConfigKey>
-										<ConnectValueFromWidget>false</ConnectValueFromWidget>
-									</Connection>
-								</PushButton>
+								    <PushButton>
+									    <TooltipId>eject</TooltipId>
+									    <Style></Style>
+									    <NumberStates>1</NumberStates>
+									    <State>
+										    <Number>0</Number>
+										    <Pressed>btn_eject_sampler_over.png</Pressed>
+										    <Unpressed>btn_eject_sampler.png</Unpressed>
+									    </State>
+									    <Pos>37,5</Pos>
+									    <Connection>
+										    <ConfigKey>[Channel<Variable name="channum"/>],eject</ConfigKey>
+										    <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+										    <ButtonState>LeftButton</ButtonState>
+										    <ConnectValueToWidget>false</ConnectValueToWidget>
+									    </Connection>
+								    </PushButton>
 
 									<NumberBpm>
 										<TooltipId>visual_bpm</TooltipId>
@@ -230,7 +139,7 @@
 												padding-top: 1px;}
 										</Style>
 										<Size>42f,24f</Size>
-										<Pos>100,2</Pos>
+										<Pos>55,2</Pos>
 										<Group>[Channel<Variable name="channum"/>]</Group>
 										<!--CSS alignments not respected see bug lp:605530 , lets call <Alignment>-->
 										<Alignment>right</Alignment>
@@ -255,35 +164,55 @@
 							<BackPath>style/style_bg_sampler_bottom.png</BackPath>
 							<Style>QGroupBox { border: 0px solid red; } QWidget { margin: 10px; padding: 0; }</Style>
 							<Children>	
-								<PushButton>
-									<TooltipId>play_start</TooltipId>
-									<Style></Style>
-									<NumberStates>2</NumberStates>
-									<RightClickIsPushButton>true</RightClickIsPushButton>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_play_sampler_down.png</Pressed>
-										<Unpressed>btn_play_sampler.png</Unpressed>
-									</State>
-									<State>
-										<Number>1</Number>
-										<Pressed>btn_play_sampler_overdown.png</Pressed>
-										<Unpressed>btn_play_sampler_over.png</Unpressed>
-									</State>
-									<Pos>3,7</Pos>
-									<Connection>
-						                <ConfigKey>[Channel<Variable name="channum"/>],cue_gotoandplay</ConfigKey>
-						                <ButtonState>LeftButton</ButtonState>
-						            </Connection>
-						            <Connection>
-						                <ConfigKey>[Channel<Variable name="channum"/>],start_stop</ConfigKey>
-						                <ButtonState>RightButton</ButtonState>
-						            </Connection>
-						            <Connection>
-						                <ConfigKey>[Channel<Variable name="channum"/>],play_indicator</ConfigKey>
-						            </Connection>
-								</PushButton>				
+						        <!--
+						        ****************************************
+						         Button- Play
+						        ****************************************
+						        -->
+						        <PushButton>
+							        <TooltipId>play_cue_set</TooltipId>
+							        <Style></Style>
+							        <NumberStates>2</NumberStates>
+							        <State>
+								        <Number>0</Number>
+								        <Pressed>btn_play1_small_down.png</Pressed>
+								        <Unpressed>btn_play1_small.png</Unpressed>
+							        </State>
+							        <State>
+								        <Number>1</Number>
+								        <Pressed>btn_play1_small_overdown.png</Pressed>
+								        <Unpressed>btn_play1_small_over.png</Unpressed>
+							        </State>
+							        <Pos>3,5</Pos>
+							        <Connection>
+								        <ConfigKey>[Channel<Variable name="channum"/>],play</ConfigKey>
+								        <ButtonState>LeftButton</ButtonState>
+							        </Connection>
+							        <Connection>
+								        <ConfigKey>[Channel<Variable name="channum"/>],cue_set</ConfigKey>
+								        <ButtonState>RightButton</ButtonState>
+							        </Connection>
+							        <Connection>
+								        <ConfigKey>[Channel<Variable name="channum"/>],play_indicator</ConfigKey>
+							        </Connection>
+						        </PushButton>	
 							</Children>
+						</WidgetGroup>
+
+                        <WidgetGroup>
+					        <ObjectName>DeckTopLeftPart</ObjectName>
+					        <Size>35f,35f</Size>
+					        <BackPath>style/style_bg_deck_pane.png</BackPath>
+					        <Style>QGroupBox { border: 0px solid red; } QWidget { margin: 0; padding: 0; }</Style>
+					        <Children>
+						        <CoverArt>
+							        <Pos>0,2</Pos>
+							        <TooltipId>coverart</TooltipId>
+							        <ObjectName>DeckCoverArt</ObjectName>
+							        <Size>30f,30f</Size>
+							        <Group>[Channel<Variable name="channum"/>]</Group>
+						        </CoverArt>
+					        </Children>
 						</WidgetGroup>
 
 						<WidgetGroup>
@@ -326,23 +255,26 @@
 							<Style>QGroupBox { border: 0px solid red; } QWidget { margin: 10px; padding: 0; }</Style>
 							<Children>	
 
-								<PushButton>
-									<TooltipId>eject</TooltipId>
-									<Style></Style>
-									<NumberStates>1</NumberStates>
-									<State>
-										<Number>0</Number>
-										<Pressed>btn_eject_sampler_over.png</Pressed>
-										<Unpressed>btn_eject_sampler.png</Unpressed>
-									</State>
-									<Pos>1,5</Pos>
-									<Connection>
-										<ConfigKey>[Channel<Variable name="channum"/>],eject</ConfigKey>
-										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-										<ButtonState>LeftButton</ButtonState>
-										<ConnectValueToWidget>false</ConnectValueToWidget>
-									</Connection>
-								</PushButton>
+                               <PushButton>
+			                        <TooltipId></TooltipId>
+			                        <Style></Style>
+			                        <NumberStates>2</NumberStates>
+			                        <State>
+				                        <Number>0</Number>
+				                        <Pressed>unmute.png</Pressed>
+				                        <Unpressed>unmute.png</Unpressed>
+			                        </State>
+			                        <State>
+				                        <Number>1</Number>
+				                        <Pressed>mute.png</Pressed>
+				                        <Unpressed>mute.png</Unpressed>
+			                        </State>
+			                        <Pos>02,8</Pos>
+			                        <Connection>
+				                        <ConfigKey>[Channel<Variable name="channum"/>],mute</ConfigKey>
+				                        <ButtonState>LeftButton</ButtonState>
+			                        </Connection>
+		                        </PushButton>
 								
 								<PushButton>
 									<TooltipId>pfl</TooltipId>
@@ -358,7 +290,7 @@
 										<Pressed>btn_pfl_fx_overdown.png</Pressed>
 										<Unpressed>btn_pfl_fx_over.png</Unpressed>
 									</State>
-									<Pos>22,5</Pos>
+									<Pos>20,5</Pos>
 									<Connection>
 										<ConfigKey>[Channel<Variable name="channum"/>],pfl</ConfigKey>
 									</Connection>

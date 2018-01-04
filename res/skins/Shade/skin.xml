@@ -598,6 +598,42 @@
 															<Size>50me,15f</Size>
 															<Elide>right</Elide>
 														</Text>
+
+														<!--
+														**********************************************
+														Button- CUE
+														**********************************************
+														-->
+						                                <PushButton>
+							                                <TooltipId>cue_default_cue_gotoandstop</TooltipId>
+							                                <Style></Style>
+							                                <NumberStates>2</NumberStates>
+							                                <State>
+								                                <Number>0</Number>
+								                                <Pressed>btn_cue1_small_down.png</Pressed>
+								                                <Unpressed>btn_cue1_small.png</Unpressed>
+							                                </State>
+							                                <State>
+								                                <Number>1</Number>
+								                                <Pressed>btn_cue1_small_overdown.png</Pressed>
+								                                <Unpressed>btn_cue1_small_over.png</Unpressed>
+							                                </State>
+							                                <Pos>0,10</Pos>
+							                                <Connection>
+								                                <ConfigKey>[PreviewDeck1],cue_default</ConfigKey>
+								                                <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+								                                <ButtonState>LeftButton</ButtonState>
+							                                </Connection>
+							                                <Connection>
+								                                <ConfigKey>[PreviewDeck1],cue_gotoandstop</ConfigKey>
+								                                <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+								                                <ButtonState>RightButton</ButtonState>
+							                                </Connection>
+							                                <Connection>
+								                                <ConfigKey>[PreviewDeck1],cue_indicator</ConfigKey>
+							                                </Connection>
+						                                </PushButton>
+
 														<!--
 														**********************************************
 														Button- Eject
