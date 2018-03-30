@@ -48,6 +48,7 @@
       <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
       <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
       <attribute persist="true" config_key="[Samplers],show_samplers">0</attribute>
+      <attribute config_key="[Skin],half_waveform">0</attribute>
       <!-- item index in skin_settings_sampler_rows.xml, '1' enables 2 sampler rows -->
       <attribute persist="true" config_key="[Tango],sampler_rows">1</attribute>
       <attribute persist="true" config_key="[SamplerRow1],expanded">0</attribute>

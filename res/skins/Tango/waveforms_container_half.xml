@@ -10,13 +10,13 @@ Variables:
 -->
 <Template>
   <WidgetGroup>
-    <ObjectName>WaveformContainer</ObjectName>
-    <Layout>vertical</Layout>
+    <ObjectName>WaveformContainer_half</ObjectName>
+    <Layout>horizontal</Layout>
     <SizePolicy>me,min</SizePolicy>
     <Children>
 
-      <WidgetGroup><!-- Waveforms 1/2 -->
-        <Layout>horizontal</Layout>
+      <WidgetGroup><!-- Waveforms -->
+        <Layout>vertical</Layout>
         <SizePolicy>me,min</SizePolicy>
         <Children>
 
@@ -32,6 +32,7 @@ Variables:
             </Children>
           </WidgetGroup><!-- /1 -->
 
+
           <WidgetGroup><!-- 2 -->
             <Layout>horizontal</Layout>
             <SizePolicy>me,min</SizePolicy>
@@ -43,16 +44,9 @@ Variables:
               </Template>
             </Children>
           </WidgetGroup><!-- /2 -->
-        </Children>
-      </WidgetGroup><!-- /Waveforms 1/2 -->
 
 
-      <WidgetGroup><!-- Waveforms 3/4 -->
-        <Layout>horizontal</Layout>
-        <SizePolicy>me,min</SizePolicy>
-        <Children>
-
-          <WidgetGroup><!-- 3 -->
+          <WidgetGroup><!-- 3 & 4 -->
             <Layout>horizontal</Layout>
             <SizePolicy>me,min</SizePolicy>
             <Children>
@@ -61,22 +55,20 @@ Variables:
                 <SetVariable name="SignalBgColor"><Variable name="SignalBgColor_3"/></SetVariable>
                 <SetVariable name="SignalColor"><Variable name="SignalColor_3"/></SetVariable>
               </Template>
-            </Children>
-          </WidgetGroup><!-- /3 -->
 
-          <WidgetGroup><!-- 4 -->
-            <Layout>horizontal</Layout>
-            <SizePolicy>me,min</SizePolicy>
-            <Children>
               <Template src="skin:waveform.xml">
                 <SetVariable name="chanNum">4</SetVariable>
                 <SetVariable name="SignalBgColor"><Variable name="SignalBgColor_4"/></SetVariable>
                 <SetVariable name="SignalColor"><Variable name="SignalColor_4"/></SetVariable>
               </Template>
             </Children>
-          </WidgetGroup><!-- /4 -->
+            <Connection>
+              <ConfigKey>[Master],show_4decks</ConfigKey>
+              <BindProperty>visible</BindProperty>
+            </Connection>
+          </WidgetGroup><!-- /3 & 4 -->
         </Children>
-      </WidgetGroup><!-- /Waveforms 3/4 -->
+      </WidgetGroup><!-- /Waveforms -->
 
       <WidgetGroup><ObjectName>Spacer0f</ObjectName><Size>1f,1me</Size></WidgetGroup>
 
