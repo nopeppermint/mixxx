@@ -15,6 +15,7 @@
 
       <!--Skin settings-->
       <attribute persist="true" config_key="[Deere],show_parallel_waveforms">1</attribute>
+      <attribute config_key="[Skin],half_waveform">0</attribute>
       <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
       <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
 
