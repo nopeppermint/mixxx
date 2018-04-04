@@ -1896,6 +1896,10 @@ QToolTip {
   border: 1px solid #333;
 }
 
+#WaveformDivider {
+  background: transparent;
+}
+
 #TEST {
   background-color: #451278;
 }

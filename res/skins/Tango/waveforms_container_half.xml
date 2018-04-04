@@ -32,7 +32,6 @@ Variables:
             </Children>
           </WidgetGroup><!-- /1 -->
 
-
           <WidgetGroup><!-- 2 -->
             <Layout>horizontal</Layout>
             <SizePolicy>me,min</SizePolicy>
