@@ -307,7 +307,7 @@
           </PushButton>
 
           <PushButton>
-            <Size>69f,24f</Size>
+            <Size>80f,24f</Size>
             <TooltipId>show_autodj_always</TooltipId>
             <ObjectName>GuiToggleButton</ObjectName>
             <NumberStates>2</NumberStates>
