@@ -82,19 +82,19 @@
                   <LibraryBreadCrumb>
                     <ObjectName>LibraryBreadCrumb</ObjectName>
                     <SizePolicy>me,min</SizePolicy>
-                    <Id>1</Id>
+                    <Id>2</Id>
                   </LibraryBreadCrumb>
-
-                  <SearchBox>
-                    <Id>1</Id>
-                  </SearchBox>
 
                   <LibraryPane>
                     <BgColor>#585858</BgColor>
                     <FgColor>#eece33</FgColor>
-                    <Id>1</Id>
+                    <Id>2</Id>
                   </LibraryPane>
                 </Children>
+		            <Connection>
+		             <ConfigKey persist="true">[Library],show_autodj_always</ConfigKey>
+		             <BindProperty>visible</BindProperty>
+		            </Connection>
               </WidgetGroup>
 
             </Children>
