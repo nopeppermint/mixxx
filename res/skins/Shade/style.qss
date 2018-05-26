@@ -196,12 +196,107 @@ WLibrary QRadioButton#radioButtonRecentlyAdded { margin: 9px 3px 6px 12px; }
 /* Spacing between treeview and searchbar*/
 QTreeView { margin: 2px 0px 0px 3px; }
 
-/* triangle for closed/opened branches in treeview*/
-QTreeView { show-decoration-selected: 0;} /*  Suppresses that selected sidebar items branch indicator shows wrong color when out of focus ; lp:880588*/
+QTableView,
+QTextBrowser,
+QTreeView {
+  border: 1px solid #585858;
+  font-weight: normal;
+  color: #9e9e9e;
+  background-color: #0f0f0f;
+  alternate-background-color: #1a1a1a;
+  selection-color: #e6e6e6;
+  selection-background-color: #666;
+}
+
+QTreeView {
+  min-height: 90px;
+  min-width: 90px;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #585858;
+  show-decoration-selected: 0;
+  /* Don't define top margin here, it won't shift ScrollBar.
+  Defined by SearchBox	*/
+  margin: 0px;
+  }
+  QTreeView:focus,
+  QTableView:focus { /*
+    New Library navigation COs only work if TreeView or TableView have focus.
+    Clicking on buttons, sliders and visuals elsewhere removes focus from Library.
+    In conjunction with [Library],MoveFocusBackward/..Forward, this helps a lot. */
+    border-color: #ff6600;
+  }
+
+/*  Closed branch of tree 	*/
 QTreeView::branch:has-children:!has-siblings:closed,
-QTreeView::branch:closed:has-children:has-siblings { border-image: none; image: url(skin:/style/style_branch_closed.png);}
+QTreeView::branch:closed:has-children:has-siblings {
+  image: url(skin:/graphics/branch_closed.png);
+  }
+  QTreeView::branch:has-children:!has-siblings:closed:selected,
+  QTreeView::branch:closed:has-children:has-siblings:selected {
+    image: url(skin:/graphics/branch_closed.png);
+    background-color: #333;
+  }
+
+/*  Open branch of tree 	*/
 QTreeView::branch:open:has-children:!has-siblings,
-QTreeView::branch:open:has-children:has-siblings { border-image: none; image: url(skin:/style/style_branch_open.png);}
+QTreeView::branch:open:has-children:has-siblings {
+  image: url(skin:/graphics/branch_open.png);
+  }
+  QTreeView::branch:open:has-children:!has-siblings:selected,
+  QTreeView::branch:open:has-children:has-siblings:selected {
+    border-image: none;
+    image: url(skin:/graphics/branch_open.png);
+    background-color: #333;
+  }
 
+QTreeView::item:selected {
+  border-image: none;
+  background-image: none;
+  background-color: #333;
+  color: #cfcfcf;
+  }
 
+QTableView {
+}
 
+QHeaderView {
+  font-family: Ubuntu;
+  font-weight: bold;
+  /* Note(ronso0)
+  Interferes with skin scaling
+  font-size: 13px/13px;	*/
+  color: #CFCFCF;
+  background-color: #1e1e1e;
+  }
+  /*	Library header 'buttons'	*/
+  QHeaderView::section {
+    padding-left: 4px;
+    padding-top: 1px;
+    /*	set right border so that first column header
+    on the left doesn't have double border on the left	*/
+    border-right: 1px solid #585858;
+    background-color: #333;
+    border-radius: 0px;
+    }
+  QHeaderView::section:hover {
+    background-color: #585858;
+    border-radius: 0px;
+  }
+
+  QHeaderView::up-arrow,
+  QHeaderView::down-arrow {
+  font-size: 10pt;
+  }
+  QHeaderView::up-arrow {
+    image: url(skin:/graphics/library_sort_up.svg)
+    }
+    QHeaderView::up-arrow:hover {
+      image: url(skin:/graphics/library_sort_up_hover.svg)
+    }
+  QHeaderView::down-arrow {
+    image: url(skin:/graphics/library_sort_down.svg)
+    }
+    QHeaderView::down-arrow:hover {
+      image: url(skin:/graphics/library_sort_down_hover.svg)
+    }
