@@ -80,15 +80,22 @@
               <WidgetGroup>
                 <Layout>vertical</Layout>
                 <Children>
-                  <LibraryBreadCrumb>
-                    <ObjectName>LibraryBreadCrumb</ObjectName>
-                    <SizePolicy>me,min</SizePolicy>
-                    <Id>1</Id>
-                  </LibraryBreadCrumb>
 
-                  <SearchBox>
-                    <Id>1</Id>
-                  </SearchBox>
+		          <WidgetGroup>
+		            <Layout>horizontal</Layout>
+
+		            <Children>
+		              <LibraryBreadCrumb>
+		                <ObjectName>LibraryBreadCrumb</ObjectName>
+		                <SizePolicy>min,min</SizePolicy>
+		                <Id>1</Id>
+		              </LibraryBreadCrumb>
+
+		              <SearchBox>
+		                <Id>1</Id>
+		              </SearchBox>
+		            </Children>
+		          </WidgetGroup>
 
                   <LibraryPane>
                     <BgColor>#585858</BgColor>

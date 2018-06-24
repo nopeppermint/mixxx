@@ -189,12 +189,11 @@ Description:
                     <Id>1</Id>
                   </LibraryBreadCrumb>
 
+		          <SearchBox>
+		            <Id>1</Id>
+		          </SearchBox>
                 </Children>
               </WidgetGroup>
-
-              <SearchBox>
-                <Id>1</Id>
-              </SearchBox>
 
               <LibraryPane>
                 <BgColor>#585858</BgColor>

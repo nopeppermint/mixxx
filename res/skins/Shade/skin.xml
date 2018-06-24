@@ -513,12 +513,17 @@
                     <Layout>vertical</Layout>
                     <SizePolicy>me,me</SizePolicy>
                     <Children>
-                      <LibraryBreadCrumb>
-                        <Id>1</Id>
-                      </LibraryBreadCrumb>
-                      <SearchBox>
-                        <Id>1</Id>
-                      </SearchBox>
+						<WidgetGroup>
+                   		 <Layout>horizontal</Layout>
+						  <Children>
+				              <LibraryBreadCrumb>
+				                <Id>1</Id>
+				              </LibraryBreadCrumb>
+				              <SearchBox>
+				                <Id>1</Id>
+				              </SearchBox>
+						   </Children>
+						</WidgetGroup>
                       <LibraryPane>
                         <Id>1</Id>
                       </LibraryPane>
