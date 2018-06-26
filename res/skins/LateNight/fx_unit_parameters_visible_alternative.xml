@@ -1,0 +1,99 @@
+<!DOCTYPE template>
+<!--
+  Description:
+    An effect unit widget.
+  Variables:
+    group: The group for the controls.
+-->
+<Template>
+  <SetVariable name="FxRack_FxUnit">EffectRack<Variable name="FxRack"/>_EffectUnit<Variable name="FxUnit"/></SetVariable>
+
+  <WidgetGroup>
+    <ObjectName>EffectUnit<Variable name="FxUnit"/></ObjectName>
+    <Layout>horizontal</Layout>
+    <SizePolicy>me,max</SizePolicy>
+    <Children>
+
+      <WidgetGroup><!-- Show parameters -->
+        <SizePolicy>me,me</SizePolicy>
+        <Layout>horizontal</Layout>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>EffectRows</ObjectName>
+            <SizePolicy>me,me</SizePolicy>
+            <Layout>vertical</Layout>
+            <BackPath>style/background_tile.png</BackPath>
+            <Children>
+              <Template src="skin:fx_slot_alternative.xml">
+                <SetVariable name="FxNum">1</SetVariable>
+              </Template>
+
+              <WidgetGroup><ObjectName>Spacer58</ObjectName><Size>1me,1f</Size></WidgetGroup>
+
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup><!-- /No parameters -->
+
+      <WidgetGroup><!-- Enable + Mix/Super + Pfl -->
+        <ObjectName>EffectUnitControls</ObjectName>
+        <Layout>horizontal</Layout>
+        <SizePolicy>f,f</SizePolicy>
+        <Children>
+
+		  <WidgetGroup>
+		    <Layout>vertical</Layout>
+		    <SizePolicy>f,f</SizePolicy>
+		    <Children>
+              <WidgetGroup><!-- Super knob, optional -->
+                <Layout>vertical</Layout>
+                <SizePolicy>min,min</SizePolicy>
+                <Children>
+                  <SingletonContainer>
+                    <ObjectName>FxUnit<Variable name="FxUnit"/>_SuperKnob</ObjectName>
+                  </SingletonContainer>
+                </Children>
+                <Connection>
+                  <ConfigKey persist="true">[Master],show_superknobs</ConfigKey>
+                  <BindProperty>visible</BindProperty>
+                </Connection>
+              </WidgetGroup>
+
+			  <SingletonContainer>
+			    <ObjectName>FxUnit<Variable name="FxUnit"/>_DryWetKnob</ObjectName>
+			  </SingletonContainer>
+			</Children>
+		  </WidgetGroup>
+		  <WidgetGroup>
+		    <Layout>vertical</Layout>
+		    <SizePolicy>f,f</SizePolicy>
+		    <Children>
+
+		      <SingletonContainer>
+		        <ObjectName>FxUnit<Variable name="FxUnit"/>_ExpandCollapseButton</ObjectName>
+		      </SingletonContainer>
+
+			  <WidgetGroup>
+				<Layout>horizontal</Layout>
+				<SizePolicy>f,f</SizePolicy>
+				<Children>
+				  <Template src="skin:button_2state.xml">
+				    <SetVariable name="TooltipId">EffectSlot_enabled</SetVariable>
+				    <SetVariable name="ObjectName">FxToggleButton</SetVariable>
+				    <SetVariable name="icon">fxToggle</SetVariable>
+				    <SetVariable name="Size">30f,30f</SetVariable>
+				    <SetVariable name="ConfigKey"><Variable name="FxRack_FxUnit_FxNum"/>,enabled</SetVariable>
+				  </Template>
+				  <SingletonContainer>
+				    <ObjectName>FxUnit<Variable name="FxUnit"/>_PflButton</ObjectName>
+				  </SingletonContainer>
+				</Children>
+			  </WidgetGroup>
+			</Children>
+		  </WidgetGroup>
+        </Children>
+      </WidgetGroup><!-- /Enable + Mix/Super + Pfl -->
+
+    </Children>
+  </WidgetGroup>
+</Template>

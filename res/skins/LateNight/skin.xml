@@ -41,6 +41,7 @@
       <attribute config_key="[Master],num_decks">4</attribute>
       <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
       <attribute persist="true" config_key="[EffectRack1],show">0</attribute>
+      <attribute persist="true" config_key="[EffectRack],toogle_effect_per_slot">0</attribute>
       <attribute persist="true" config_key="[Samplers],show_samplers">0</attribute>
       <attribute persist="true" config_key="[Vinylcontrol],show_vinylcontrol">0</attribute>
       <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
