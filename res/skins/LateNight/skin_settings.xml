@@ -275,7 +275,7 @@ Description:
             <SizePolicy>me,min</SizePolicy>
             <Layout>vertical</Layout>
             <Children>
-              <WidgetGroup><!-- 4 Effect Units -->
+              <WidgetGroup><!-- 8 Samplers -->
                 <Layout>stacked</Layout>
                 <Size>190f,17f</Size>
                 <Children>
@@ -298,7 +298,7 @@ Description:
                     <SetVariable name="Setting">[Master],show_8sampler</SetVariable>
                   </Template>
                 </Children>
-              </WidgetGroup><!-- /4 Effect Units -->
+              </WidgetGroup><!-- / 8 Samplers -->
 
               <PushButton>
                 <TooltipId>LoadSamplerBank</TooltipId>
