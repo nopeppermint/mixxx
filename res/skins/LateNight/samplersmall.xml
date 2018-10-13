@@ -8,7 +8,7 @@
     <Children>
 
       <WidgetGroup>
-        <ObjectName>SamplerPlay</ObjectName>
+        <ObjectName>SamplerPlaySmall</ObjectName>
         <Layout>horizontal</Layout>
         <SizePolicy>min,min</SizePolicy>
         <Children>
@@ -56,6 +56,21 @@
         </Children>
       </WidgetGroup>
 
+	    <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <SizePolicy>min,min</SizePolicy>									
+		    <Children>
+			    <Number>
+		        <TooltipId>visual_bpm</TooltipId>
+		        <Group>[Sampler<Variable name="samplernum"/>]</Group>
+		        <!--CSS alignments not respected see bug lp:605530 , lets call <Alignment>-->
+		        <Alignment>right</Alignment>
+		        <Connection>
+			        <ConfigKey>[Sampler<Variable name="samplernum"/>],visual_bpm</ConfigKey>
+		        </Connection>
+			    </Number>
+		    </Children>
+	    </WidgetGroup>
 
       <!-- Sampler controls -->
       <WidgetGroup>
