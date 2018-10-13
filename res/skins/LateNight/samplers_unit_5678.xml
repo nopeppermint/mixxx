@@ -45,7 +45,8 @@
 
       <WidgetGroup><Size>2f,1min</Size></WidgetGroup>
 
-      <PushButton>
+     <PushButton>
+        <TooltipId>show_samplers</TooltipId>
         <ObjectName>Samplerexpandbutton</ObjectName>
         <Size>min,min</Size>
         <NumberStates>2</NumberStates>
