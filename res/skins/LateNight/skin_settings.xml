@@ -263,6 +263,46 @@ Description:
             </Children>
           </WidgetGroup><!-- /Effects -->
 
+          <!-- Samplers -->
+          <Template src="skin:skin_settings_labelbutton_2state.xml">
+            <SetVariable name="text">Samplers </SetVariable>
+            <SetVariable name="Setting">[Samplers],show_samplers</SetVariable>
+          </Template>
+
+
+        <WidgetGroup><!-- 4 buttons -->
+            <ObjectName>SkinSettingsCategory</ObjectName>
+            <SizePolicy>me,min</SizePolicy>
+            <Layout>vertical</Layout>
+            <Children>
+              <WidgetGroup><!-- 4 Effect Units -->
+                <Layout>stacked</Layout>
+                <Size>190f,17f</Size>
+                <Children>
+                  <!-- index 0 due to bug -->
+                  <WidgetGroup><Size>0f,0f</Size></WidgetGroup>
+
+                  <WidgetGroup>
+                    <ObjectName>SubmenuCover</ObjectName>
+                    <Layout>stacked</Layout>
+                    <Size>190f,17f</Size>
+                    <Connection>
+                      <ConfigKey persist="true">[Samplers],show_samplers</ConfigKey>
+                      <Transform><Not/></Transform>
+                      <BindProperty>visible</BindProperty>
+                    </Connection>
+                  </WidgetGroup>
+
+                  <Template src="skin:skin_settings_button_2state.xml">
+                    <SetVariable name="text">8 Samplers</SetVariable>
+                    <SetVariable name="Setting">[Master],show_8sampler</SetVariable>
+                  </Template>
+                </Children>
+              </WidgetGroup><!-- /4 Effect Units -->
+
+            </Children>
+          </WidgetGroup><!-- /Effects -->
+
           <Label>
             <ObjectName>CategoryLabel</ObjectName>
             <Text>Miscellaneous</Text>

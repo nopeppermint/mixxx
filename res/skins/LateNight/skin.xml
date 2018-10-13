@@ -39,6 +39,7 @@
     <attributes>
       <!-- Set skin defaults. -->
       <attribute config_key="[Master],num_decks">4</attribute>
+      <attribute config_key="[Master],num_samplers">8</attribute>
       <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
       <attribute persist="true" config_key="[EffectRack1],show">0</attribute>
       <attribute persist="true" config_key="[Samplers],show_samplers">0</attribute>
@@ -50,6 +51,7 @@
       <attribute persist="true" config_key="[Library],show_coverart">1</attribute>
       <attribute persist="true" config_key="[Master],show_4decks">0</attribute>
       <attribute persist="true" config_key="[Master],show_4effectunits">0</attribute>
+      <attribute persist="true" config_key="[Master],show_8sampler">0</attribute>
       <attribute persist="true" config_key="[Library],show_library">1</attribute>
       <attribute persist="true" config_key="[Master],show_xfader">1</attribute>
       <attribute persist="true" config_key="[Skin],8_hotcues">0</attribute>
