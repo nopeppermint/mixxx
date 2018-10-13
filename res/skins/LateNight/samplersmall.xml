@@ -1,0 +1,120 @@
+<Template>
+  <SetVariable name="group">[Sampler<Variable name="samplernum"/>]</SetVariable>
+  <WidgetGroup>
+    <ObjectName>SamplerDeck</ObjectName>
+    <Layout>horizontal</Layout>
+    <SizePolicy>me,min</SizePolicy>
+    <MinimumSize>280,40</MinimumSize>
+    <Children>
+
+      <WidgetGroup>
+        <ObjectName>SamplerPlay</ObjectName>
+        <Layout>horizontal</Layout>
+        <SizePolicy>min,min</SizePolicy>
+        <Children>
+          <PushButton>
+            <TooltipId>cue_gotoandplay_cue_default</TooltipId>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+              <Pressed>buttons/btn_play_sampler_down.svg</Pressed>
+              <Unpressed>buttons/btn_play_sampler.svg</Unpressed>
+            </State>
+            <State>
+              <Number>1</Number>
+              <Pressed>buttons/btn_play_sampler_overdown.svg</Pressed>
+              <Unpressed>buttons/btn_play_sampler_over.svg</Unpressed>
+            </State>
+            <Connection>
+              <ConfigKey><Variable name="group"/>,cue_gotoandplay</ConfigKey>
+              <ButtonState>LeftButton</ButtonState>
+            </Connection>
+            <Connection>
+              <ConfigKey><Variable name="group"/>,cue_default</ConfigKey>
+              <ButtonState>RightButton</ButtonState>
+            </Connection>
+            <Connection>
+              <ConfigKey><Variable name="group"/>,play_indicator</ConfigKey>
+            </Connection>
+          </PushButton>
+        </Children>
+      </WidgetGroup>
+
+       <WidgetGroup>
+        <ObjectName>SamplerTextSmall</ObjectName>
+        <Layout>horizontal</Layout>
+        <SizePolicy>min,min</SizePolicy>
+        <Children>
+          <TrackProperty>
+            <TooltipId>track_title</TooltipId>
+            <ObjectName>SamplerTitle</ObjectName>
+            <SizePolicy>me,min</SizePolicy>
+            <Property>title</Property>
+            <Group><Variable name="group"/></Group>
+            <Elide>right</Elide>
+          </TrackProperty>
+        </Children>
+      </WidgetGroup>
+
+
+      <!-- Sampler controls -->
+      <WidgetGroup>
+        <ObjectName>SamplerButtonGrid</ObjectName>
+        <Layout>vertical</Layout>
+        <SizePolicy>max,min</SizePolicy>
+        <Children>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <SizePolicy>min,min</SizePolicy>
+            <Children>
+              <PushButton>
+                <TooltipId>eject</TooltipId>
+                <NumberStates>1</NumberStates>
+                <State>
+                  <Number>0</Number>
+                  <Pressed>buttons/btn_eject_over.svg</Pressed>
+                  <Unpressed>buttons/btn_eject.svg</Unpressed>
+                </State>
+                <Connection>
+                  <ConfigKey><Variable name="group"/>,eject</ConfigKey>
+                  <ButtonState>LeftButton</ButtonState>
+                </Connection>
+              </PushButton>
+            </Children>
+          </WidgetGroup>
+
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <SizePolicy>min,min</SizePolicy>
+            <Children>
+              <PushButton>
+                <TooltipId>orientation</TooltipId>
+                <NumberStates>3</NumberStates>
+                <State>
+                  <Number>0</Number>
+                  <Pressed>buttons/btn_orientation_sampler_left.svg</Pressed>
+                  <Unpressed>buttons/btn_orientation_sampler_left.svg</Unpressed>
+                </State>
+                <State>
+                  <Number>1</Number>
+                  <Pressed>buttons/btn_orientation_sampler_master.svg</Pressed>
+                  <Unpressed>buttons/btn_orientation_sampler_master.svg</Unpressed>
+                </State>
+                <State>
+                  <Number>2</Number>
+                  <Pressed>buttons/btn_orientation_sampler_right.svg</Pressed>
+                  <Unpressed>buttons/btn_orientation_sampler_right.svg</Unpressed>
+                </State>
+                <Connection>
+                  <ConfigKey><Variable name="group"/>,orientation</ConfigKey>
+                  <ButtonState>LeftButton</ButtonState>
+                </Connection>
+              </PushButton>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup><!-- /Sampler controls -->
+
+    </Children>
+  </WidgetGroup>
+</Template>

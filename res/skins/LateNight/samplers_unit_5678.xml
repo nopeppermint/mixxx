@@ -4,25 +4,25 @@
     <SizePolicy>me,max</SizePolicy>
     <Children>
 
-      <Template src="skin:sampler.xml">
+      <Template src="skin:samplersmall.xml">
         <SetVariable name="samplernum">5</SetVariable>
       </Template>
 
       <WidgetGroup><Size>10f,1min</Size></WidgetGroup>
 
-      <Template src="skin:sampler.xml">
+      <Template src="skin:samplersmall.xml">
         <SetVariable name="samplernum">6</SetVariable>
       </Template>
 
       <WidgetGroup><Size>10f,1min</Size></WidgetGroup>
 
-      <Template src="skin:sampler.xml">
+      <Template src="skin:samplersmall.xml">
         <SetVariable name="samplernum">7</SetVariable>
       </Template>
 
       <WidgetGroup><Size>10f,1min</Size></WidgetGroup>
 
-      <Template src="skin:sampler.xml">
+      <Template src="skin:samplersmall.xml">
         <SetVariable name="samplernum">8</SetVariable>
       </Template>
 
