@@ -14,7 +14,29 @@
         <SetVariable name="samplernum">6</SetVariable>
       </Template>
 
-      <WidgetGroup><Size>10f,1min</Size></WidgetGroup>
+      <WidgetGroup><Size>2f,1min</Size></WidgetGroup>
+
+      <PushButton>
+        <ObjectName>Samplerexpandbutton</ObjectName>
+        <Size>min,min</Size>
+        <NumberStates>2</NumberStates>
+        <State>
+          <Number>0</Number>
+          <Pressed>skin:/buttons/btn_samplerExpand.svg</Pressed>
+          <Unpressed>skin:/buttons/btn_samplerExpand.svg</Unpressed>
+        </State>
+        <State>
+          <Number>1</Number>
+          <Pressed>skin:/buttons/btn_samplerCollapse.svg</Pressed>
+          <Unpressed>skin:/buttons/btn_samplerCollapse.svg</Unpressed>
+        </State>
+        <Connection>
+          <ConfigKey>[[Samplers],show_big5678</ConfigKey>
+          <ButtonState>LeftButton</ButtonState>
+        </Connection>
+      </PushButton>
+
+      <WidgetGroup><Size>2f,1min</Size></WidgetGroup>
 
       <Template src="skin:samplersmall.xml">
         <SetVariable name="samplernum">7</SetVariable>

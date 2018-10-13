@@ -1099,7 +1099,6 @@ border: 0px;
   border-left: 1px;
 }
 
-
 #SamplerTitle {
   font-size: 16px/19px;
   text-align: left;
@@ -1127,6 +1126,11 @@ border: 0px;
 
 #SamplerButtonGrid {
   border: 1px solid #585858;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+#SmallSamplerButtonGrid {
   border-top: 0px;
   border-bottom: 0px;
 }

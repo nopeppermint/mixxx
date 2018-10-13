@@ -59,7 +59,7 @@
 
       <!-- Sampler controls -->
       <WidgetGroup>
-        <ObjectName>SamplerButtonGrid</ObjectName>
+        <ObjectName>SmallSamplerButtonGrid</ObjectName>
         <Layout>vertical</Layout>
         <SizePolicy>max,min</SizePolicy>
         <Children>
