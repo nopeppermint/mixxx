@@ -1105,6 +1105,12 @@ border: 0px;
   text-transform: none;
 }
 
+#SamplerTitleSmall {
+  font-size: 14px/17px;
+  text-align: left;
+  text-transform: none;
+}
+
 #SamplerRowTwo {
   border: 1px solid #585858;
   border-top: 0px;

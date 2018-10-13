@@ -47,7 +47,7 @@
         <Children>
           <TrackProperty>
             <TooltipId>track_title</TooltipId>
-            <ObjectName>SamplerTitle</ObjectName>
+            <ObjectName>SamplerTitleSmall</ObjectName>
             <SizePolicy>me,min</SizePolicy>
             <Property>title</Property>
             <Group><Variable name="group"/></Group>
