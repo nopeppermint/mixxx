@@ -31,7 +31,7 @@
           <Unpressed>skin:/buttons/btn_samplerCollapse.svg</Unpressed>
         </State>
         <Connection>
-          <ConfigKey>[[Samplers],show_big5678</ConfigKey>
+          <ConfigKey>[Samplers],show_big5678</ConfigKey>
           <ButtonState>LeftButton</ButtonState>
         </Connection>
       </PushButton>
