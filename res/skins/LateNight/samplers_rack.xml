@@ -2,26 +2,79 @@
 
   <WidgetGroup>
     <Layout>horizontal</Layout>
+    <SizePolicy>me,max</SizePolicy>
     <Connection>
       <ConfigKey>[Samplers],show_samplers</ConfigKey>
       <BindProperty>visible</BindProperty>
     </Connection>
     <Children>
-      <WidgetGroup>
-        <Layout>vertical</Layout>
+
+      <!-- Select between either 4 or 8 samplers -->
+      <WidgetStack currentpage="[Master],show_8sampler">
         <Children>
-          <Template src="skin:samplers_unit_1234.xml"/>
-          <Template src="skin:samplers_unit_5678.xml"/>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:samplers_unit_1234.xml"/>
+            </Children>
+          </WidgetGroup>
+
+          <!--8 Sampler -->
+          <WidgetGroup trigger="[Master],show_8sampler" on_hide_select="0">
+          <Layout>horizontal</Layout>
+            <Children>
+              <!-- Select between 1-4 big or orthers -->
+              <WidgetStack currentpage="[Samplers],show_big1234">
+                <Children>
+                  <WidgetGroup>
+                    <Layout>horizontal</Layout>
+                    <Children>
+                      <Template src="skin:samplers_unit_1234_big_of_8.xml"/>
+                    </Children>
+                  </WidgetGroup>
+
+                  <!--8 Sampler -->
+                  <WidgetGroup trigger="[Samplers],show_big1234" on_hide_select="0">
+                  <Layout>horizontal</Layout>
+                    <Children>
+                      <!-- Select between 5-8 big or 8 tiny -->
+                      <WidgetStack currentpage="[Samplers],show_big5678">
+                        <Children>
+                          <WidgetGroup>
+                            <Layout>horizontal</Layout>
+                            <Children>
+                              <Template src="skin:samplers_unit_5678_big_of_8.xml"/>
+                            </Children>
+                          </WidgetGroup>
+
+                          <!--8 tiny Sampler -->
+                          <WidgetGroup trigger="[Samplers],show_big5678_big_of_8" on_hide_select="0">
+                          <Layout>horizontal</Layout>
+                            <Children>
+                              <Template src="skin:samplers_unit_1-8.xml"/>
+                            </Children>
+                          </WidgetGroup>
+                          <!--/8 Sampler -->
+                        </Children>
+                      </WidgetStack>
+                      <!-- /Select between 5-8 big or all small -->
+                    </Children>
+                  </WidgetGroup>
+                </Children>
+              </WidgetStack>
+            </Children>
+          </WidgetGroup>
         </Children>
-      </WidgetGroup>
+      </WidgetStack>
 
       <WidgetGroup>
-        <Size>5f,1min</Size>
-        <Connection>
-          <ConfigKey>[Master],skin_settings</ConfigKey>
-          <BindProperty>visible</BindProperty>
-        </Connection>
+      <Size>5f,1min</Size>
+          <Connection>
+            <ConfigKey>[Master],skin_settings</ConfigKey>
+            <BindProperty>visible</BindProperty>
+          </Connection>
       </WidgetGroup>
+
     </Children>
   </WidgetGroup>
 </Template>
