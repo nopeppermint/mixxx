@@ -1106,7 +1106,7 @@ border: 0px;
 }
 
 #SamplerTitleSmall {
-  font-size: 14px/17px;
+  font-size: 12px;
   text-align: left;
   text-transform: none;
 }
@@ -1137,7 +1137,7 @@ border: 0px;
 }
 
 #SamplerPlaySmall {
-  padding: 1px 1px 1px 1px;
+  padding: 3px 1px 1px 3px;
   border-top: 0px;
   border-left: 0px;
   border-bottom: 0px;

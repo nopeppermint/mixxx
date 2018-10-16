@@ -43,13 +43,13 @@
             <NumberStates>2</NumberStates>
             <State>
               <Number>1</Number>
-              <Pressed>skin:/buttons/btn_samplerExpand.svg</Pressed>
-              <Unpressed>skin:/buttons/btn_samplerExpand.svg</Unpressed>
+              <Pressed>skin:/buttons/btn_samplerExpand_5_8.svg</Pressed>
+              <Unpressed>skin:/buttons/btn_samplerExpand_5_8.svg</Unpressed>
             </State>
             <State>
               <Number>0</Number>
-              <Pressed>skin:/buttons/btn_samplerCollapse.svg</Pressed>
-              <Unpressed>skin:/buttons/btn_samplerCollapse.svg</Unpressed>
+              <Pressed>skin:/buttons/btn_samplerCollapse_5_8.svg</Pressed>
+              <Unpressed>skin:/buttons/btn_samplerCollapse_5_8.svg</Unpressed>
             </State>
             <Connection>
               <ConfigKey>[Samplers],show_big5678</ConfigKey>

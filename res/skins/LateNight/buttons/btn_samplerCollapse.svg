@@ -9,7 +9,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg4724"
    width="20"
-   height="32"
+   height="50"
    version="1.1"
    sodipodi:docname="btn_samplerCollapse.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
@@ -42,9 +42,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="12.11147"
-     inkscape:cx="5.3575382"
-     inkscape:cy="15.618383"
+     inkscape:zoom="17.128205"
+     inkscape:cx="9.2373711"
+     inkscape:cy="12.909651"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -88,7 +88,7 @@
   </defs>
   <g
      id="layer1"
-     transform="matrix(0.54054054,0,0,0.99999889,-1.0810811,-1020.3989)">
+     transform="matrix(0.54054054,0,0,1.9545433,-1.0810811,-2006.9616)">
     <rect
        id="rect3029-6"
        x="4"
@@ -130,13 +130,13 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:51.19552612px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eeeeee;fill-opacity:0.93333333;stroke:none;stroke-width:1.27988815"
-     x="1.3279914"
-     y="40.39399"
+     x="1.59402"
+     y="62.836765"
      id="text97-3"
      transform="scale(1.5411876,0.64885028)"><tspan
        sodipodi:role="line"
        id="tspan95-6"
-       x="1.3279914"
-       y="40.39399"
+       x="1.59402"
+       y="62.836765"
        style="font-size:25.59776306px;fill:#eeeeee;fill-opacity:0.93333333;stroke-width:1.27988815">-</tspan></text>
 </svg>
