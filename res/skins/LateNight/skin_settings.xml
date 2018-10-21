@@ -276,6 +276,29 @@ Description:
             <Layout>vertical</Layout>
             <Children>
 
+              <WidgetGroup><!-- only 4 Samplers -->
+                <Layout>stacked</Layout>
+                <Size>190f,17f</Size>
+                <Children>
+                  <!-- index 0 due to bug -->
+                  <WidgetGroup><Size>0f,0f</Size></WidgetGroup>
+                  <WidgetGroup>
+                    <ObjectName>SubmenuCover</ObjectName>
+                    <Layout>stacked</Layout>
+                    <Size>190f,17f</Size>
+                    <Connection>
+                      <ConfigKey persist="true">[Samplers],show_samplers</ConfigKey>
+                      <Transform><Not/></Transform>
+                      <BindProperty>visible</BindProperty>
+                    </Connection>
+                  </WidgetGroup>
+                  <Template src="skin:skin_settings_button_2state.xml">
+                    <SetVariable name="text">only 4 Samplers</SetVariable>
+                    <SetVariable name="Setting">[Master],show_4sampler</SetVariable>
+                  </Template>
+                </Children>
+              </WidgetGroup><!-- / only 4 Samplers -->
+
               <PushButton>
                 <TooltipId>LoadSamplerBank</TooltipId>
                 <ObjectName>SkinSettingsButton</ObjectName>

@@ -30,58 +30,74 @@
 
       <WidgetGroup><Size>2f,1min</Size></WidgetGroup>
 
-		  <WidgetGroup>
-		  <Layout>horizontal</Layout>
-		    <Children>
+      <WidgetGroup>
+      <Layout>vertical</Layout>
+      <SizePolicy>min,min</SizePolicy>
+      <Children>
 
-		    <Template src="skin:samplersmall.xml">
+        <!-- First row -->
+        <WidgetGroup>
+        <ObjectName>SamplerTextSmall</ObjectName>
+        <Layout>horizontal</Layout>
+        <SizePolicy>min,min</SizePolicy>
+        <Children>
+		    <Template src="skin:sampler.xml">
 		      <SetVariable name="samplernum">1</SetVariable>
 		    </Template>
 
 		    <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
 
-		    <Template src="skin:samplersmall.xml">
+		    <Template src="skin:sampler.xml">
 		      <SetVariable name="samplernum">2</SetVariable>
 		    </Template>
 
-		    <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
+		    <WidgetGroup><Size>12f,1min</Size></WidgetGroup>
 
-		    <Template src="skin:samplersmall.xml">
+		    <Template src="skin:sampler.xml">
 		      <SetVariable name="samplernum">3</SetVariable>
 		    </Template>
 
 		    <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
 
-		    <Template src="skin:samplersmall.xml">
+		    <Template src="skin:sampler.xml">
 		      <SetVariable name="samplernum">4</SetVariable>
 		    </Template>
+        </Children>
+        </WidgetGroup>
+        <!-- /First row -->
 
-            <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
+        <!-- Second row -->
+        <WidgetGroup>
+        <Layout>horizontal</Layout>
+        <Children>
 
-	        <Template src="skin:samplersmall.xml">
+	        <Template src="skin:sampler.xml">
 	          <SetVariable name="samplernum">5</SetVariable>
 	        </Template>
 
 	        <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
 
-	        <Template src="skin:samplersmall.xml">
+	        <Template src="skin:sampler.xml">
 	          <SetVariable name="samplernum">6</SetVariable>
 	        </Template>
 
-	        <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
+	        <WidgetGroup><Size>12f,1min</Size></WidgetGroup>
 
-	        <Template src="skin:samplersmall.xml">
+	        <Template src="skin:sampler.xml">
 	          <SetVariable name="samplernum">7</SetVariable>
 	        </Template>
 
 	        <WidgetGroup><Size>4f,1min</Size></WidgetGroup>
 
-	        <Template src="skin:samplersmall.xml">
+	        <Template src="skin:sampler.xml">
 	          <SetVariable name="samplernum">8</SetVariable>
 	        </Template>
 
-	    </Children>
-	  </WidgetGroup>
+	        </Children>
+	      </WidgetGroup>
+
+        </Children>
+      </WidgetGroup>
 
       <WidgetGroup>
         <Size>5f,1min</Size>
