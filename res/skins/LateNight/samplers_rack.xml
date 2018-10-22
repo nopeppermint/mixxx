@@ -13,11 +13,22 @@
       <Layout>horizontal</Layout>
         <Children>
           <!-- Select between 1-4 big or orthers -->
-          <WidgetStack currentpage="[Master],show_4sampler">
+          <WidgetStack currentpage="[Skin],8_samplers">
             <Children>
 
-             <!-- Select between 5-8 big or 8 tiny -->
-                  <WidgetStack currentpage="[Samplers],show_big">
+              <WidgetGroup>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <Template src="skin:samplers_unit_1234.xml"/>
+                </Children>
+              </WidgetGroup>
+
+              <!--8 Sampler -->
+              <WidgetGroup trigger="[Skin],8_samplers" on_hide_select="0">
+              <Layout>horizontal</Layout>
+                <Children>
+                  <!-- Select between big or small samplers -->
+                  <WidgetStack currentpage="[Skin],expand_samplers">
                     <Children>
                       <WidgetGroup>
                         <Layout>horizontal</Layout>
@@ -27,7 +38,7 @@
                       </WidgetGroup>
 
                       <!--8 tiny Sampler -->
-                      <WidgetGroup trigger="[Samplers],show_big5678_big_of_8" on_hide_select="0">
+                      <WidgetGroup trigger="[Skin],expand_samplers" on_hide_select="0">
                       <Layout>horizontal</Layout>
                         <Children>
                           <Template src="skin:samplers_unit_1-8.xml"/>
@@ -36,18 +47,7 @@
                       <!--/8 Sampler -->
                     </Children>
                   </WidgetStack>
-                  <!-- /Select between 5-8 big or all small -->
-
-              <!--8 Sampler -->
-              <WidgetGroup trigger="[Master],show_4sampler" on_hide_select="1">
-              <Layout>horizontal</Layout>
-                <Children>
-                  <WidgetGroup>
-                    <Layout>horizontal</Layout>
-                    <Children>
-                      <Template src="skin:samplers_unit_1234.xml"/>
-                    </Children>
-                  </WidgetGroup>
+                  <!-- / Select between big or small samplers -->
                 </Children>
               </WidgetGroup>
             </Children>
