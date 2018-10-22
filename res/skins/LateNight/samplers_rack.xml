@@ -46,7 +46,7 @@
 
                       <!--8 small Sampler -->
                       <WidgetGroup trigger="[Skin],expand_samplers" on_hide_select="0">
-                      <Layout>horizontal</Layout>
+                        <Layout>horizontal</Layout>
                         <Children>
                           <Template src="skin:samplers_unit_1-8.xml"/>
                         </Children>
@@ -69,11 +69,11 @@
       </WidgetGroup>
 
       <WidgetGroup>
-      <Size>5f,1min</Size>
-          <Connection>
-            <ConfigKey>[Master],skin_settings</ConfigKey>
-            <BindProperty>visible</BindProperty>
-          </Connection>
+        <Size>5f,1min</Size>
+        <Connection>
+          <ConfigKey>[Master],skin_settings</ConfigKey>
+          <BindProperty>visible</BindProperty>
+        </Connection>
       </WidgetGroup>
 
     </Children>
