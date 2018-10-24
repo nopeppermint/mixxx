@@ -33,12 +33,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
      id="namedview14"
      showgrid="false"
      inkscape:zoom="11.8"
-     inkscape:cx="6.5705596"
+     inkscape:cx="-8.3023218"
      inkscape:cy="19.679147"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -98,16 +98,16 @@
      color="#000000"
      fill="url(#linearGradient5772-6)"
      style="text-decoration-line:none;text-indent:0;text-transform:none" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:45.039814px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d2d2d2;fill-opacity:1;stroke:none;stroke-width:1.1259954"
-     x="-47.820656"
-     y="12.34721"
-     id="text1512"
-     transform="matrix(0,-0.76954602,1.2994674,0,0,0)"><tspan
-       sodipodi:role="line"
-       id="tspan1510"
-       x="-47.820656"
-       y="12.34721"
-       style="font-size:15.01327038px;fill:#d2d2d2;fill-opacity:1;stroke-width:1.1259954">-&gt; &lt;-</tspan></text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#888888;stroke-width:0.99999994"
+     d="M 14.708012,30.000129 9.9999631,25.291987 5.2919152,30.000129 4.1148831,28.823074 9.999883,22.937957 l 5.885,5.885117 -1.177032,1.177055 z"
+     id="path2"
+     sodipodi:nodetypes="cccccccc" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#888888;stroke-width:1"
+     d="M 14.708222,11.999871 10.00008,16.708013 5.2919386,11.999871 4.1148831,13.176926 9.9999999,19.062043 15.885117,13.176926 14.708061,11.999871 Z"
+     id="path2-3"
+     sodipodi:nodetypes="cccccccc" />
 </svg>
