@@ -67,11 +67,82 @@
 
           <Template src="skin:button_2state_persist.xml">
             <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
-            <SetVariable name="Size">125f,24f</SetVariable>
-            <SetVariable name="state_0_text">Cover Art Library</SetVariable>
-            <SetVariable name="state_1_text">Cover Art Library</SetVariable>
+            <SetVariable name="Size">95f,24f</SetVariable>
+            <SetVariable name="state_0_text">Cover Art Lib.</SetVariable>
+            <SetVariable name="state_1_text">Cover Art Lib.</SetVariable>
             <SetVariable name="ConfigKey">[Library],show_coverart</SetVariable>
           </Template>
+
+          <Template src="skin:knob_textless.xml">
+            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Color">green</SetVariable>
+            <SetVariable name="TooltipId">headMix</SetVariable>
+            <SetVariable name="group">[Master]</SetVariable>
+            <SetVariable name="control">headMix</SetVariable>
+          </Template>
+
+          <Label>
+            <SizePolicy>min,min</SizePolicy>
+             <ObjectName>LatencyLabel</ObjectName>
+            <Text>head mix</Text>
+          </Label>
+
+          <Template src="skin:knob_textless.xml">
+            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Color">orange</SetVariable>
+            <SetVariable name="TooltipId">headphone_gain</SetVariable>
+            <SetVariable name="group">[Master]</SetVariable>
+            <SetVariable name="control">headGain</SetVariable>
+          </Template>
+
+          <Label>
+            <SizePolicy>min,min</SizePolicy>
+             <ObjectName>LatencyLabel</ObjectName>
+            <Text>head</Text>
+          </Label>
+
+          <WidgetGroup><!-- HeadSplit button -->
+            <Layout>horizontal</Layout>
+            <SizePolicy>me,min</SizePolicy>
+            <Children>
+              <Template src="skin:button_2state.xml">
+                <SetVariable name="TooltipId">headSplit</SetVariable>
+                <SetVariable name="ObjectName">FxAssignButton</SetVariable>
+                <SetVariable name="Size">68f,22f</SetVariable>
+                <SetVariable name="state_0_text">Split Cue</SetVariable>
+                <SetVariable name="state_1_text">Split Cue</SetVariable>
+                <SetVariable name="ConfigKey">[Master],headSplit</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup><!-- /HeadSplit button -->
+
+          <Template src="skin:knob_textless.xml">
+            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Color">red</SetVariable>
+            <SetVariable name="TooltipId">balance</SetVariable>
+            <SetVariable name="group">[Master]</SetVariable>
+            <SetVariable name="control">balance</SetVariable>
+          </Template>
+
+          <Label>
+            <SizePolicy>min,min</SizePolicy>
+             <ObjectName>LatencyLabel</ObjectName>
+            <Text>balance</Text>
+          </Label>
+
+          <Template src="skin:knob_textless.xml">
+            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Color">orange</SetVariable>
+            <SetVariable name="TooltipId">master_gain</SetVariable>
+            <SetVariable name="group">[Master]</SetVariable>
+            <SetVariable name="control">gain</SetVariable>
+          </Template>
+
+          <Label>
+            <SizePolicy>min,min</SizePolicy>
+            <ObjectName>LatencyLabel</ObjectName>
+            <Text>master</Text>
+          </Label>
 
         </Children>
         <Connection>
@@ -146,30 +217,30 @@
       <WidgetGroup><!-- Recording button & recording duration label -->
         <ObjectName>RecBox</ObjectName>
         <Layout>stacked</Layout>
-        <Size>72f,24f</Size>
+        <Size>67f,24f</Size>
         <!-- minus 1px border
-            = 70x18 available for text -->
+            = 65x18 available for text -->
         <Children>
           <!-- invisible Rec button -->
           <Template src="skin:button_2state.xml">
             <SetVariable name="ObjectName">RecButton</SetVariable>
             <SetVariable name="TooltipId">toggle_recording</SetVariable>
-            <SetVariable name="Size">68f,20f</SetVariable>
+            <SetVariable name="Size">63f,20f</SetVariable>
             <SetVariable name="ConfigKey">[Recording],toggle_recording</SetVariable>
           </Template>
 
           <WidgetGroup><!-- Rec dot + RecDuration -->
             <Layout>horizontal</Layout>
-            <Size>68f,18f</Size>
+            <Size>63f,18f</Size>
             <Children>
               <Label>
                 <ObjectName>RecDot</ObjectName>
-                <Size>15f,18f</Size>
+                <Size>10f,18f</Size>
               </Label>  
 
               <RecordingDuration>
                 <ObjectName>RecDuration</ObjectName>
-                <Size>53f,18f</Size>
+                <Size>49f,18f</Size>
                 <InactiveText>REC</InactiveText>
                 <Alignment>center</Alignment>
               </RecordingDuration>
@@ -180,7 +251,7 @@
           <Template src="skin:button_3state_display.xml">
             <SetVariable name="ObjectName">RecFeedback</SetVariable>
             <SetVariable name="TooltipId">toggle_recording</SetVariable>
-            <SetVariable name="Size">65f,18f</SetVariable>
+            <SetVariable name="Size">60f,18f</SetVariable>
             <SetVariable name="ConfigKey">[Recording],toggle_recording</SetVariable>
             <SetVariable name="ConfigKeyDisp">[Recording],status</SetVariable>
           </Template>
