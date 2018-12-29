@@ -74,7 +74,7 @@
           </Template>
 
           <Template src="skin:knob_textless.xml">
-            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Size">30f,25f</SetVariable>
             <SetVariable name="Color">green</SetVariable>
             <SetVariable name="TooltipId">headMix</SetVariable>
             <SetVariable name="group">[Master]</SetVariable>
@@ -88,7 +88,7 @@
           </Label>
 
           <Template src="skin:knob_textless.xml">
-            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Size">30f,25f</SetVariable>
             <SetVariable name="Color">orange</SetVariable>
             <SetVariable name="TooltipId">headphone_gain</SetVariable>
             <SetVariable name="group">[Master]</SetVariable>
@@ -108,7 +108,7 @@
               <Template src="skin:button_2state.xml">
                 <SetVariable name="TooltipId">headSplit</SetVariable>
                 <SetVariable name="ObjectName">FxAssignButton</SetVariable>
-                <SetVariable name="Size">68f,22f</SetVariable>
+                <SetVariable name="Size">68f,20f</SetVariable>
                 <SetVariable name="state_0_text">Split Cue</SetVariable>
                 <SetVariable name="state_1_text">Split Cue</SetVariable>
                 <SetVariable name="ConfigKey">[Master],headSplit</SetVariable>
@@ -117,7 +117,7 @@
           </WidgetGroup><!-- /HeadSplit button -->
 
           <Template src="skin:knob_textless.xml">
-            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Size">30f,25f</SetVariable>
             <SetVariable name="Color">red</SetVariable>
             <SetVariable name="TooltipId">balance</SetVariable>
             <SetVariable name="group">[Master]</SetVariable>
@@ -131,7 +131,7 @@
           </Label>
 
           <Template src="skin:knob_textless.xml">
-            <SetVariable name="Size">35f,30f</SetVariable>
+            <SetVariable name="Size">30f,25f</SetVariable>
             <SetVariable name="Color">orange</SetVariable>
             <SetVariable name="TooltipId">master_gain</SetVariable>
             <SetVariable name="group">[Master]</SetVariable>
